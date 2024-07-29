@@ -1,0 +1,161 @@
+#jumbotron {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(#367588,#00637C);
+    color: white;
+}
+
+#jumbotron > h1 {
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.1s
+}
+
+#jumbotron > p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.product-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-#purchase {
+    display: flex;
+    justify-content: center;
+}
+
+.display {
+    background-color: #c9c9c9;
+    width: 23%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.display:hover {
+    background-color: #d6d6d6;
+}
+
+.display > p {
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.purchasebutton {
+    font-family: 'Lucida Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    background-color: #009c4e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.purchasebutton:hover {
+    background-color: #00b85c;
+}
+
+.purchase {
+    background-color: lightgray;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.purchase > p {
+    font-size: 20px;
+}
+
+.cartbutton {
+    font-family: 'Lucida Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    background-color: #009c4e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.nav-link, .navbar-brand {
+    font-family: 'Lucida Sans', sans-serif;
+    color: whitesmoke;
+}
+
+#results {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 20px;
+}
+
+#addbutton {
+    font-family: 'Lucida Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f2ae1b;
+    transition: 0.1s;
+}
+
+#addbutton:hover {
+    background-color: #ffc547;
+}
+
+#backbutton {
+    font-family: 'Lucida Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #02a8ad;
+    transition: 0.1s;
+}
+
+#submitbutton {
+    font-family: 'Lucida Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #b376db;
+    transition: 0.1s;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <%- include ('partials/navbar.ejs') %>
+    <h1 style="text-align: center;">Figurines</h1>
+    <p id="results" style="text-align: center;"><%= figurine.name %></p>
+    <div class="grid-container">
+        <div></div>
+        <div>
+            <div id="purchase">
+                <img src="<%= figurine.image %>" alt="<%= figurine.alt %>" width="10%"/>
+                <p><b>Title:</b> <%= figurine.name %></p>
+                <p><b>Type:</b> <%= figurine.type %></p>
+                <p><b>Brand:</b> <%= figurine.company %></p>
+                <p><b>Price:</b> $<%= figurine.price %></p>
+                <p><b>Date:</b> <%= figurine.date %></p>
+                <p><b>Description:</b> <%= figurine.description %></p>
+                <a class="cartbutton">Add to cart</a>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <%- include ('partials/navbar.ejs') %>
+    <h1 style="text-align: center;">Video Games</h1>
+    <div class="grid-container">
+        <div></div>
+            <form action="/game/add" method="POST" enctype="multipart/form-data">
+                <label for="image">Image:</label><br>
+                <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+                <label for="imagedesc">Image Description:</label><br>
+                <input type="text" id="imagedesc" name="imagedesc" required><br><br>
+
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" required><br><br>
+
+                <label for="genre">Genre:</label><br>
+                <input type="text" id="genre" name="genre" required><br><br>
+
+                <label for="content_rating">Content Rating:</label><br>
+                <input type="text" id="content_rating" name="content_rating" required><br><br>
+
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description" required><br><br>
+
+                <label for="studio">Studio:</label><br>
+                <input type="text" id="studio" name="studio" required><br><br>
+
+                <label for="price">Price:</label><br>
+                <input type="number" id="price" name="price" required><br><br>
+
+                <label for="date_released">Date:</label><br>
+                <input type="date" id="date_released" name="date_released" required><br><br>
+
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" required><br><br>
+
+                <button type="submit">Add Game</button>
+            </form>
+        <div></div>
+    </div>
+</body>
+
+</html>
