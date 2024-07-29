@@ -24,7 +24,6 @@ const connection = mysql.createConnection({
     password: '&8zhbsMrVe73JrS',
     database: 'freedb_oranqif_database',
     port: 3306,
-    socketPath: 'https://phpmyadmin.freedb.tech/'
 });
 
 const upload = multer({storage: storage});
