@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const app = express();
-const port = process.env.PORT || 3306;
+let port = process.env.PORT || 0;
 
 app.listen(port, () => {
     console.log(`i am done with this shit but here it is ${port}`)
