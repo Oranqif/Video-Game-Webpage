@@ -17,7 +17,8 @@ const connection = mysql.createConnection({
     host: 'sql.freedb.tech',
     user: 'freedb_oranqif',
     password: '&8zhbsMrVe73JrS',
-    database: 'freedb_oranqif_database'
+    database: 'freedb_oranqif_database',
+    port: 3306
 });
 
 const upload = multer({storage: storage});
@@ -430,7 +431,7 @@ app.get('/contact/submit', (req, res) => {
     res.render('submit');
 });
 
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port http://localhost:${PORT}`);
 });
