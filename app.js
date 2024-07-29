@@ -14,10 +14,10 @@ const storage = multer.diskStorage({
 });
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'localhost',
-    database: 'gamingstore'
+    host: 'sql.freedb.tech',
+    user: 'freedb_oranqif',
+    password: 'p6m*8v#pe883?cC',
+    database: 'freedb_oranqif_database'
 });
 
 const upload = multer({storage: storage});
