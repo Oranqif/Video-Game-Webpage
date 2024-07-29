@@ -19,11 +19,12 @@ const storage = multer.diskStorage({
 });
 
 const connection = mysql.createConnection({
-    host: 'https://phpmyadmin.freedb.tech/',
+    host: 'sql.freedb.tech',
     user: 'freedb_oranqif',
     password: '&8zhbsMrVe73JrS',
     database: 'freedb_oranqif_database',
-    port: 3306
+    port: 3306,
+    socketPath: 'https://phpmyadmin.freedb.tech/'
 });
 
 const upload = multer({storage: storage});
