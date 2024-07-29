@@ -18,7 +18,7 @@ const connection = mysql.createConnection({
     user: 'freedb_oranqif',
     password: '&8zhbsMrVe73JrS',
     database: 'freedb_oranqif_database',
-    port: 3306
+    port: 3000
 });
 
 const upload = multer({storage: storage});
