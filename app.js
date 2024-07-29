@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'localhost',
     database: 'gamingstore'
 });
 
